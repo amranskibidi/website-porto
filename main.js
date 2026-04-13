@@ -119,12 +119,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const btn = form.querySelector('button[type="submit"]');
       const original = btn.textContent;
 
-      btn.textContent = 'Sending...';
+      const tFn = window.i18n ? window.i18n.t : (k) => k;
+      btn.textContent = tFn('contact.sending');
       btn.disabled = true;
       btn.style.opacity = '0.7';
 
       setTimeout(() => {
-        btn.textContent = 'Message Sent!';
+        btn.textContent = tFn('contact.sent');
         btn.style.background = '#22c55e';
         form.reset();
 
