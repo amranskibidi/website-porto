@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AMRAN — Fullstack Developer</title>
+  <meta name="description" content="Fullstack Developer crafting high-performance web experiences. 100+ projects delivered." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">AMR<span class="accent">AN</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="toggle-icon sun">☀</span>
+          <span class="toggle-icon moon">☽</span>
+        </button>
+        <a href="mailto:amranmandari@gmail.com" class="nav-cta">Hire Me</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for work
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line">Hi, I'm</span>
+        <span class="title-name">AMRAN</span>
+        <span class="title-role">Fullstack <em>Developer</em></span>
+      </h1>
+      <p class="hero-desc">
+        I architect and build end-to-end digital products — from pixel-perfect interfaces to robust backend systems. Turning complex problems into elegant, scalable solutions.
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="100">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="3">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="98">0</span><span class="stat-plus">%</span>
+          <span class="stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-ghost">Let's Talk</a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="photo-ring ring-1"></div>
+      <div class="photo-ring ring-2"></div>
+      <div class="photo-ring ring-3"></div>
+      <div class="photo-frame">
+        <img src="photo.jpg" alt="AMRAN" class="hero-photo" id="heroPhoto" />
+        <div class="photo-placeholder" id="photoPlaceholder">
+          <div class="placeholder-icon">👤</div>
+          <span>Add your photo</span>
+        </div>
+      </div>
+      <div class="floating-badge badge-1">
+        <span>⚡</span> Next.js
+      </div>
+      <div class="floating-badge badge-2">
+        <span>🐍</span> Python
+      </div>
+      <div class="floating-badge badge-3">
+        <span>✦</span> 100+ Projects
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-tag">About Me</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Crafting digital experiences that <em>actually matter</em></h2>
+          <p>I'm a passionate Fullstack Developer based in Indonesia with a deep obsession for clean code, intuitive UX, and high-performance web applications. I thrive at the intersection of design and engineering.</p>
+          <p>With 100+ projects under my belt — ranging from dynamic landing pages to real-time data applications — I bring a holistic perspective to every build. Whether it's a sleek frontend or a complex backend architecture, I deliver with precision.</p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon">🎯</div>
+              <div>
+                <strong>Detail-Oriented</strong>
+                <span>Every pixel, every line of code matters</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🚀</div>
+              <div>
+                <strong>Performance First</strong>
+                <span>Fast, scalable, and optimized by default</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon">🤝</div>
+              <div>
+                <strong>Collaborative</strong>
+                <span>Strong communicator across teams</span>
+              </div>
+            </div>
+          </div>
+          <a href="https://github.com/amranskibidi" target="_blank" class="btn-primary">View GitHub →</a>
+        </div>
+        <div class="about-visual">
+          <div class="about-card-stack">
+            <div class="acard acard-1">
+              <span class="acard-num">100+</span>
+              <span class="acard-label">Projects Completed</span>
+            </div>
+            <div class="acard acard-2">
+              <span class="acard-num">∞</span>
+              <span class="acard-label">Lines of Code Written</span>
+            </div>
+            <div class="acard acard-3">
+              <span class="acard-num">24/7</span>
+              <span class="acard-label">Dedicated to Craft</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-tag">Featured Work</div>
+      <h2 class="section-title">Projects that <em>stand out</em></h2>
+      <p class="section-sub">Handpicked from 100+ delivered projects — these two represent the best of my craft.</p>
+      <div class="projects-grid">
+
+        <div class="project-card" data-index="01">
+          <div class="project-visual pv-1">
+            <div class="project-mockup">
+              <div class="mockup-browser">
+                <div class="mockup-bar">
+                  <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                  <div class="mockup-url">landingpage.vercel.app</div>
+                </div>
+                <div class="mockup-screen screen-1">
+                  <div class="ms-hero">
+                    <div class="ms-phone"></div>
+                    <div class="ms-text-block">
+                      <div class="ms-line long"></div>
+                      <div class="ms-line medium"></div>
+                      <div class="ms-btn-mock"></div>
+                    </div>
+                  </div>
+                  <div class="ms-features">
+                    <div class="ms-feat"></div>
+                    <div class="ms-feat"></div>
+                    <div class="ms-feat"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-number">01</div>
+            <h3 class="project-title">Smartphone Landing Page</h3>
+            <p class="project-desc">A high-converting, visually stunning product landing page designed for a smartphone brand. Built with a focus on elegant simplicity, smooth scroll interactions, and persuasive UX patterns that guide users toward conversion. Every section is crafted to highlight the product's key features with cinematic precision.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/amranskibidi" target="_blank" class="plink plink-gh">GitHub →</a>
+              <a href="#" class="plink plink-live">Live Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card project-card-alt" data-index="02">
+          <div class="project-visual pv-2">
+            <div class="project-mockup">
+              <div class="mockup-browser">
+                <div class="mockup-bar">
+                  <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                  <div class="mockup-url">weatherapp.vercel.app</div>
+                </div>
+                <div class="mockup-screen screen-2">
+                  <div class="ms-weather">
+                    <div class="ms-weather-icon">⛅</div>
+                    <div class="ms-weather-temp">28°C</div>
+                    <div class="ms-weather-loc">Gorontalo, ID</div>
+                  </div>
+                  <div class="ms-weather-stats">
+                    <div class="ms-wstat"><div class="ms-line short"></div><div class="ms-line xshort"></div></div>
+                    <div class="ms-wstat"><div class="ms-line short"></div><div class="ms-line xshort"></div></div>
+                    <div class="ms-wstat"><div class="ms-line short"></div><div class="ms-line xshort"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-number">02</div>
+            <h3 class="project-title">Real-Time Weather App</h3>
+            <p class="project-desc">A sleek, location-aware weather application delivering hyper-accurate real-time meteorological data. Leverages geolocation APIs and live weather data feeds to display current conditions, humidity, wind speed, and forecasts with a beautifully crafted, intuitive interface. Zero lag. Always accurate.</p>
+            <div class="project-tags">
+              <span>JavaScript</span><span>Weather API</span><span>Geolocation</span><span>CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/amranskibidi" target="_blank" class="plink plink-gh">GitHub →</a>
+              <a href="#" class="plink plink-live">Live Demo ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="more-projects">
+        <p>These are just 2 of <strong>100+ projects</strong> I've built.</p>
+        <a href="https://github.com/amranskibidi" target="_blank" class="btn-ghost">See All on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-tag">Tech Stack</div>
+      <h2 class="section-title">Tools I <em>master</em></h2>
+      <div class="skills-grid">
+        <div class="skill-item" style="--delay: 0s">
+          <div class="skill-icon">🌐</div>
+          <span>HTML5</span>
+        </div>
+        <div class="skill-item" style="--delay: 0.05s">
+          <div class="skill-icon">🎨</div>
+          <span>CSS3</span>
+        </div>
+        <div class="skill-item" style="--delay: 0.1s">
+          <div class="skill-icon">⚡</div>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-item" style="--delay: 0.15s">
+          <div class="skill-icon">🔷</div>
+          <span>TypeScript</span>
+        </div>
+        <div class="skill-item" style="--delay: 0.2s">
+          <div class="skill-icon">▲</div>
+          <span>Next.js</span>
+        </div>
+        <div class="skill-item" style="--delay: 0.25s">
+          <div class="skill-icon">⚛</div>
+          <span>React</span>
+        </div>
+        <div class="skill-item" style="--delay: 0.3s">
+          <div class="skill-icon">🐍</div>
+          <span>Python</span>
+        </div>
+        <div class="skill-item" style="--delay: 0.35s">
+          <div class="skill-icon">🗄</div>
+          <span>SQL</span>
+        </div>
+        <div class="skill-item" style="--delay: 0.4s">
+          <div class="skill-icon">🔥</div>
+          <span>Firebase</span>
+        </div>
+        <div class="skill-item" style="--delay: 0.45s">
+          <div class="skill-icon">🐙</div>
+          <span>Git & GitHub</span>
+        </div>
+        <div class="skill-item" style="--delay: 0.5s">
+          <div class="skill-icon">☁</div>
+          <span>Cloudflare</span>
+        </div>
+        <div class="skill-item" style="--delay: 0.55s">
+          <div class="skill-icon">📱</div>
+          <span>Responsive Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-tag">Get In Touch</div>
+      <h2 class="section-title">Let's build something <em>amazing</em></h2>
+      <p class="section-sub">Whether you have a project in mind, a question, or just want to say hi — my inbox is always open.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">✉</div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:amranmandari@gmail.com">amranmandari@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div>
+              <span class="contact-label">WhatsApp</span>
+              <a href="https://wa.me/6285824033517" target="_blank">+62 858-2403-3517</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">⌥</div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/amranskibidi" target="_blank">@amranskibidi</a>
+            </div>
+          </div>
+          <div class="contact-availability">
+            <span class="avail-dot"></span>
+            Currently available for freelance & full-time opportunities
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="john@company.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">AMR<span class="accent">AN</span></div>
+        <p class="footer-copy">© 2025 AMRAN. Crafted with passion & precision.</p>
+        <div class="footer-links">
+          <a href="https://github.com/amranskibidi" target="_blank">GitHub</a>
+          <a href="mailto:amranmandari@gmail.com">Email</a>
+          <a href="https://wa.me/6285824033517" target="_blank">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="Three-scene .JS"></script>
+  <script src="main.js"></script>
+</body>
+</html>
